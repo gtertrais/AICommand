@@ -53,7 +53,7 @@ public sealed class AICommandWindow : EditorWindow
     bool IsApiKeyOk
       => !string.IsNullOrEmpty(AICommandSettings.instance.apiKey);
 
-    [MenuItem("Window/AI Command")]
+    [MenuItem("Window/AI Command/Do Something in the Editor")]
     static void Init() => GetWindow<AICommandWindow>(true, "AI Command");
 
     void OnGUI()
